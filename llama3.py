@@ -343,7 +343,6 @@ question_router = prompt | llm_groq | JsonOutputParser()
 ### web Search tool
 
 from langchain_community.tools.tavily_search import TavilySearchResults
-from langchain.agents import load_tools
 
 
 web_search_tool = TavilySearchResults(k=3)
