@@ -6,7 +6,7 @@ beautifulsoup4
 chainlit
 
 chroma-hnswlib
-chromadb
+chromadb==0.5.3
 
 fastapi
 fastapi-socketio
