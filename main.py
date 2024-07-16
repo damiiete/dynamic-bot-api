@@ -22,7 +22,7 @@ from llama3 import graph_app
 app = FastAPI(title="Dynamic chatbot App")
 
 # Set all CORS enabled origins
-App.add_middleware(
+app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_credentials=True,
