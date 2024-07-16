@@ -793,7 +793,7 @@ checkpointer = MemorySaver()
 
 # # %%
 # # Compile test 1 
-app = workflow.compile(checkpointer=checkpointer)
+graph_app = workflow.compile(checkpointer=checkpointer)
 print("App Loaded. . .")
 #%%
 # res = app.invoke({"question": "What did the patient have for breakfast and dinner on 2023-12-21?"})

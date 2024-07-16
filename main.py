@@ -17,9 +17,9 @@ from fastapi import FastAPI
 from langserve import add_routes
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
-from llama3 import app
+from llama3 import graph_app
 
-App = FastAPI(title="Dynamic chatbot App")
+app = FastAPI(title="Dynamic chatbot App")
 
 # Set all CORS enabled origins
 App.add_middleware(
@@ -31,7 +31,7 @@ App.add_middleware(
     expose_headers=["*"],
 )
 
-add_routes(App, app)
+add_routes(app, graph_app)
 
 # if __name__ == "__main__":
 # uvicorn.run(App, host="localhost", port=8500)
